@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        .loginform{
+            width: 350px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .loginform h1{
+            font-family: 'Noto Serif', serif;
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 40px 0;
+        }
+
+        input{
+            width: 300px;
+            height: 35px;
+            font-size: 30px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            padding-left: 5px;
+            border-radius: 2px;
+        }
+
+        input[type=checkbox]{
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            word-spacing: 0;
+            letter-spacing: 0;
+            padding-left: 0;
+            cursor: pointer;
+        }
+        button{
+            background-color: bisque;
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .loginform p{
+            font-family: 'Noto Serif', serif;
+            font-size: 30px;
+            margin: 15px 0;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .sellogt{
+            position: relative;
+            bottom: -40px;
+            left: 10px;
+        }
+
+        #remember{
+            font-size: 20px;
+            
+        }
+
+        #remember1{
+            width: 15px;
+            height: 15px;
+        }
+
+
+        #register{
+            text-transform:uppercase;
+            position: relative;
+            left: 20%;
+            font-size: 16px;
+            margin: 15px 0;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        a:hover{
+            opacity: 50%;
+            color: blueviolet;
+        }
+        a:active{
+            color: black;
+        }
+
+    </style>
+
+    
+    <title>SELLER LOGIN PAGE</title>
+</head>
+
+<body background="imgs/seller-loginbg2.jpg">
+    <div class="loginform">
+        <h1 class="sellogt">SELLER LOGIN FORM</h1>
+        <form action="sellerlogin.php" method="post">
+            
+            <p><input type="text" placeholder="username"  required="" name="username"></p>
+           
+            <p><input type="password" placeholder="password"  required="" name="password"></p>
+
+            <p id="register">havent registered ??
+            <a href="sellerreg.html" target="_self"><b>Register now</b></a></p>
+
+            <button type="submit">Login</button>
+            <button type="reset">clear</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+
+header{
+    background-color: #0c0c0c;
+}
+
+.navbar{
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+
+    
+}
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;  /*this is to add a space between the logo and the search bar */
+}
+
+.brand-logo{       
+    height: 100px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    width: 500px;
+    display: flex;
+}
+
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #faf5f6;
+    text-transform: capitalize;
+    background: none;
+    color: #fcf5f5;
+    outline: none;
+}
+
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #0c0c0c;
+    color: rgb(253, 246, 247);
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder{
+    color: #fdf7f7;
+}
+
+.nav-items a{
+    margin-left: 20px;
+}
+
+.nav-items a img{
+    width: 30px;
+}
+
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #f1e9e9;
+}
+
+.link,.link-1{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #f8eeee;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 2;
+}
+
+
+.subdiv-1{
+    display: none;
+}
+
+.link:hover .subdiv-1{
+    display: block;
+    position: relative;
+    background: #f8eeee;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+

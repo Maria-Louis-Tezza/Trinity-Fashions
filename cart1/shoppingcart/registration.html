@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regsitration page</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        body{
+            background-image: url("imgs/reg2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .regform{
+            color: beige;
+            width: 500px;
+            position: absolute;
+            top: 30%;
+            left: 50%;;
+            transform: translate(-50%,-50%);
+        }
+
+        .regform h1{
+            color: beige;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 40px 0;
+        }
+
+        input{
+            width: 200px;
+            height: 20px;
+            font-size: 18px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            padding-left: 5px;
+        }
+
+        table{
+            position:relative;
+            left: 10%;
+            padding: 10px;
+            border-spacing:10px;
+        }
+        table td{
+            font-size: 22px;
+        }
+
+        button{
+            background-color: rgba(183, 183, 160, 0.825);
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        a{
+            color: burlywood;
+        }
+
+        #register{
+            text-transform:uppercase;
+            position: relative;
+            left: 20%;
+            font-size: 18px;
+            margin: 15px 0;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        a:hover{
+            opacity: 50%;
+            color: orange;
+        }
+        a:active{
+            color: rgb(255, 248, 248);
+        }
+
+    </style>
+    <title>Login page</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    
+    <div class="regform">
+        
+        <h1>USER REGISTRATION FORM</h1>
+        <form  action="register.php" method="post">
+            <table>
+            <tr>
+                <td>First Name </td>
+                <td> : </td> 
+                <td><input type="text" placeholder="first name" name="fname" required pattern="^[a-z]{2,10}$" required=""></td>
+            </tr>
+
+            <tr>
+                <td>
+                    Last Name
+                </td>
+                <td> : </td>
+                <td>
+                    <input type="text" placeholder="lastname" required pattern="^[a-z]{2,10}$"  name="lname" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Username 
+                </td>
+                <td> : </td>
+                <td>
+                    <!-- <input type="text" placeholder="username" name="uname" required> -->
+                    <input id="uname" type="text" placeholder="username" name="uname" required pattern="^[a-z0-9]{3,15}$" title="username may only contain letters and numbers">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Mail ID 
+                </td>
+                <td> : </td>
+                <td>
+                    <input type="email" placeholder="mail" name="mail" required="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Phone Number 
+                </td>
+                <td> : </td>
+                <td>
+                    <input type="tel" placeholder="phno" name="phno" maxlength="10" required pattern="^[0-9]{10}$" title="enter correct phone number" required>        
+                    
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Password 
+                </td>
+                <td> : </td>
+                <td>
+                    <input id="password" type="password" name="password" placeholder="passsword" required pattern="^[a-z]{8}$" >  
+                    <!-- ^ represents starting character of the string.
+                    (?=.*[0-9]) represents a digit must occur at least once.
+                    (?=.*[a-z]) represents a lower case alphabet must occur at least once.
+                    (?=.*[A-Z]) represents an upper case alphabet that must occur at least once.
+                    (?=.*[@#$%^&-+=()] represents a special character that must occur at least once.
+                    (?=\\S+$) white spaces don’t allowed in the entire string.
+                    .{8, 20} represents at least 8 characters and at most 20 characters.
+                    $ represents the end of the string. -->    
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Retype Password 
+                </td>
+                <td> : </td>
+                <td>
+                    <input id="password" type="password" placeholder="retype password" name="repassword" required pattern="“^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8, 20}$”">
+                </td>
+            </tr>
+
+            <tr>
+
+                <td> </td>
+                <td> </td>
+                <td>
+                Already have an account?
+                </td>
+                <td>
+                    <a href="login.html" target="_blank">login</a>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">submit </button></td>
+                <td> </td>
+                <td><button type="reset">clear</button></td>
+                
+            </tr>
+        </table>
+        
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
+
+</body>
+</html>

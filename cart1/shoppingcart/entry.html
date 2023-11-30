@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regsitration page</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        body{
+            background-image: url("imgs/seller-loginbg12.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .regform{
+            color: beige;
+            width: 500px;
+            position: absolute;
+            top: 30%;
+            left: 50%;;
+            transform: translate(-50%,-50%);
+        }
+
+        
+
+        .regform h1{
+            color: beige;
+            position: relative;
+            top: 70px;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 40px 0;
+        }
+
+        input{
+            width: 200px;
+            height: 20px;
+            font-size: 18px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            padding-left: 5px;
+        }
+
+        table{
+            position:relative;
+            top:100px;
+            left: 10%;
+            padding: 10px;
+            border-spacing:5px;
+        }
+        table td{
+            font-size: 22px;
+        }
+
+        button{
+            background-color: rgba(183, 183, 160, 0.825);
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        a{
+            color: burlywood;
+        }
+
+        #register{
+            text-transform:uppercase;
+            position: relative;
+            left: 20%;
+            font-size: 18px;
+            margin: 15px 0;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        a:hover{
+            opacity: 50%;
+            color: orange;
+        }
+        a:active{
+            color: rgb(255, 248, 248);
+        }
+
+    </style>
+
+    
+    <title>entry page</title>
+</head>
+
+<body>
+
+    
+    <div class="regform">
+        
+        <h1>SELLER ENTRY FORM</h1>
+        <form action="entry.php" method="post">
+            <table>
+            <tr>
+                <td>PRODUCT NAME </td>
+                <td> : </td> 
+                <td><input type="text" placeholder="product name" name="name" required=""></td>
+            </tr>
+
+            <tr>
+                <td> CATEGORY </td>
+                <td> : </td>
+                <td> <input type="text" placeholder="Category" name="category" required> </td>
+            </tr>
+
+            <tr>
+                <td> DESCRIPTION  </td>
+                <td> : </td>
+                <td> <input type="text" placeholder="description of the product" name="desc" required> </td>
+            </tr>
+
+            <tr>
+                <td> REDUCED PRICE  </td>
+                <td> : </td>
+                <td> <input type="float" placeholder="reduced price" name="reducedprice" required=""> </td>
+            </tr>
+
+            <tr>
+                <td>  MARKED PRICE </td>
+                <td> : </td>
+                <td>  <input type="float" placeholder="MRP" name="markedprice" required> </td>
+            </tr>
+
+
+            <tr>
+                <td> QUANTITY  </td>
+                <td> : </td>
+                <td> <input type="int" placeholder="Quantity present" name="quantity" required>         </td>
+            </tr>
+
+
+            <tr>
+                <td> IMAGE NAME 1 </td>
+                <td> : </td>
+                <td> <input type="text" placeholder="image to be displayed" name="img1" required> </td>
+            </tr>
+
+            <tr>
+                <td>IMAGE NAME 2 </td>
+                <td> : </td>
+                <td> <input type="text" placeholder="additional image" name="img2" required>         </td>
+            </tr>
+
+            <tr>
+                <td> IMAGE NAME 3 </td>
+                <td> : </td>
+                <td> <input type="text" placeholder="additional image" name="img3" required>         </td>
+            </tr>
+
+            <tr>
+                <td> IMAGE NAME 4 </td>
+                <td> : </td>
+                <td> <input type="text" placeholder="additional image" name="img4" required> </td>
+            </tr>
+
+            <tr>
+                <td> Date ADDED </td>
+                <td> : </td>
+                <td> <input type="date" name="date_added" required> </td>
+            </tr>
+
+            <tr>
+
+                <td> </td>
+                <td> </td>
+                <td> Already have an account? </td>
+                <td> <a href="login.html" target="_blank">login</a> </td>
+            </tr>
+            <tr>
+                <td><button type="submit">submit </button></td>
+                <td> </td>
+                <td><button type="reset">clear</button></td>
+            </tr>
+        </table>
+        </form>
+    </div>
+
+
+    <script>
+        function success(){
+            alert("USER REGISTERED SUCCESSFULLY !!");
+        }
+    </script>
+</body>
+</html>

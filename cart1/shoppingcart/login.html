@@ -1,0 +1,125 @@
+<html>
+<head> 
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        .loginform{
+            width: 350px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .loginform h1{
+            font-family: 'Noto Serif', serif;
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 40px 0;
+        }
+
+        input{
+            width: 300px;
+            height: 35px;
+            font-size: 30px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            padding-left: 5px;
+            border-radius: 2px;
+        }
+
+        input[type=checkbox]{
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            word-spacing: 0;
+            letter-spacing: 0;
+            padding-left: 0;
+            cursor: pointer;
+        }
+        button{
+            background-color: bisque;
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .loginform p{
+            font-family: 'Noto Serif', serif;
+            font-size: 30px;
+            margin: 15px 0;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        #remember{
+            font-size: 20px;
+            
+        }
+
+        #remember1{
+            width: 15px;
+            height: 15px;
+        }
+
+
+        #register{
+            text-transform:uppercase;
+            position: relative;
+            left: 20%;
+            font-size: 16px;
+            margin: 15px 0;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        a:hover{
+            opacity: 50%;
+            color: blueviolet;
+        }
+        a:active{
+            color: black;
+        }
+
+    </style>
+
+    
+    <title>Login page</title>
+</head>
+
+<body background="imgs/loginbg-1.jpg">
+    <div class="loginform">
+        <h1>LOGIN FORM</h1>
+        <form action="login.php" method="post">
+            
+            <p><input type="text" placeholder="username"  required="" name="username"></p>
+           
+            <p><input type="password" placeholder="password"  required="" name="password"></p>
+
+            <p id="register">havent registered ??
+            <a href="registration.html" target="_self"><b>Register now</b></a></p>
+
+            <p id="register">Wanna Visit Home page
+            <a href="index.php?page=home" target="_self"><b>Click-here</b></a></p>
+
+            <button type="submit">Login</button>
+            <button type="reset">clear</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+.cart h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+.cart table {
+	width: 100%;
+}
+.cart table thead td {
+	padding: 30px;
+	border-bottom: 1px solid #EEEEEE;
+}
+ .cart table thead td:last-child {
+	text-align: right;
+}
+.cart table tbody td {
+	padding: 20px ;
+	border-bottom: 1px solid #EEEEEE;
+}
+.cart table tbody td:last-child {
+	text-align: right;
+}
+ .cart table .img {
+	width: 80px;
+}
+.cart table .remove {
+	color: #777777;
+	font-size: 12px;
+	padding-top: 3px;
+}
+.cart table .remove:hover {
+	text-decoration: underline;
+}
+.cart table .price {
+	color: #999999;
+}
+.cart table a {
+	text-decoration: none;
+	color: #555555;
+}
+.cart table input[type="number"] {
+	width: 68px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+}
+
+.cart .subtotal {
+	text-align: right;
+	padding: 40px 0;
+}
+.cart .subtotal .text {
+	
+	position:relative ;
+	left: -1200px;
+	font-size: 18px;
+	color: #999999;
+	font-weight: bolder;
+}
+.cart .subtotal .price {
+	font-size: 18px;
+	color: #999999;
+	padding-right: 30px;
+}
+.cart .buttons {
+	text-align: right;
+	padding-bottom: 40px;
+	padding-right: 20px;
+}
+.cart .buttons input[type="submit"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: #4e5c70;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.cart .buttons input[type="submit"]:hover {
+	background: #434f61;
+}
+
+.content-wrappercart{
+	background: #ddd6f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    margin-top: 10px;
+	width: auto;
+	height: auto;
+	margin:  auto;
+	
+}
+
+.com1 a {
+	text-decoration: solid;
+	color: #555555;
+	font-weight: bolder;
+}
+
+.com1{
+	padding: 30px;
+}
